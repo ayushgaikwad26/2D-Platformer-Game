@@ -783,11 +783,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 6c755d8b-2bed-4f01-acc7-4a4f1f49b7f0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: 2D Platformer Game
+  organizationId: yush48
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
