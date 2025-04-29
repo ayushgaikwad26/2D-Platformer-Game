@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Animator animator;
+    public ScoreController scoreController;
     public BoxCollider2D boxCol;
     public float speed;
     public float jump;
@@ -24,7 +25,11 @@ public class PlayerController : MonoBehaviour
         rb2d=gameObject.GetComponent<Rigidbody2D>();
         
     }
-
+    public void PickUpKey()
+{
+    Debug.Log("Player picked up the key");
+    scoreController.IncreaseScore(10);
+}
     private void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
