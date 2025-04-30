@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public Animator animator;
     public ScoreController scoreController;
+    public GameOverController gameOverController;
     public BoxCollider2D boxCol;
     public float speed;
     public float jump;
@@ -30,11 +31,8 @@ public class PlayerController : MonoBehaviour
 {
     Debug.Log("player killed by enemy");
     //Destroy(gameObject);
-    ReloadLevel();
-}
-    private void ReloadLevel()
-{
-    SceneManager.LoadScene(0);
+    gameOverController.PlayerDied();
+    
 }
 
     public void PickUpKey()
